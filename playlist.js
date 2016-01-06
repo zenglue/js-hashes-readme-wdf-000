@@ -19,7 +19,12 @@ function changePlaylistSong(playlist, song, artist){
 }
 
 function readPlaylist(playlist){
-  for (var key in playlist){
-    console.log("The song " + playlist[key] + " by " + key + " is in your playlist");
+  if (Object.keys(playlist).length == 0){
+    console.log("your playlist is empty");
+  }
+  else{
+    for (var key in playlist){
+      console.log("The song " + playlist[key] + " by " + key + " is in your playlist");
+    }
   }
 }

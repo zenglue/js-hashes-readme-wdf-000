@@ -72,6 +72,24 @@ meals;
 //returns {breakfast: "oatmeal and banana", lunch: "turkey sandwich", dinner: "steak and potatoes"}
 ```
 
+## Check Empty Object
+
+You can check to see if your object is empty by using `Object.keys(yourObject)` which returns an array of all the keys in your object.
+
+```js
+var meals = {breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes"};
+Object.keys(meals);
+//returns ["breakfast", "lunch", "dinner"]
+```
+
+You can also count the number of key-value pairs by doing something like this:
+
+```js
+var meals = {breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes"};
+Object.keys(meals).length;
+//returns 3
+```
+
 ## Iterating Over An Object
 
 In order to iterate over an object, we need to use a new loop, the for in loop. We'll stick with the meals object for this example. The for in loop looks something like this:
@@ -102,4 +120,4 @@ for (var key in meals) {
 
 + Create a function `changePlaylistSong`, which accepts three arguments (the playlist object, the artist name, and the new song you would like to add). The body of the function should update the artist key with the new song value, and return the updated playlist.
 
-+ Create a function `readPlaylist`, which accepts one argument (the playlist object). The function should iterate over the key-value pairs and use `console.log` to print out the playlist's artists and songs.
++ Create a function `readPlaylist`, which accepts one argument (the playlist object). The function should iterate over the key-value pairs and use `console.log` to print out the playlist's artists and songs. The function should check to see if there are songs on the playlist. If there aren't any, it should print out `"your playlist is empty"`.
