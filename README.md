@@ -10,9 +10,10 @@
 
 ## Intro 
 
-In JavaScript, all objects are effectively key-value pairs. We're not going to talk about objects in relation to Object Orientation, but objects as hashes. We will eventually get to objects and properties of objects, but right now we're just focused on how to create, manipulate and delete key-value pairs from a "hash".
+In JavaScript, all objects are effectively key-value pairs. We're not going to talk about objects in relation to Object Orientation, but objects as hashes. We will eventually get to objects and properties of objects, but right now we're just focused on how to create, manipulate and delete key-value pairs from a "hash". 
 
-From here on out, we'll be referring to a hash as an object. Every time you see the word "object" think "hash".
+JavaScript Objects behave sort of like a cross between Classes and Hashes in Ruby. For now, we're just going to focus on how to use them like a hash. From here on out, we'll be referring to a hash as an object. Every time you see the word "object" think "hash".
+
 
 
 ## Creating Objects
@@ -28,6 +29,14 @@ Object Constructor:
 ```js
 var meals = new Object();
 ```
+
+You can also create an object with key-value pairs:
+
+```js
+var meals = {breakfast: "oatmeal"};
+```
+
+Note that JavaScript does not have `=>` syntax. You mark a key with `:` and set the value directly after.
 
 ## Adding To An Object
 
@@ -74,7 +83,9 @@ meals;
 
 ## Check Empty Object
 
-You can check to see if your object is empty by using `Object.keys(yourObject)` which returns an array of all the keys in your object.
+
+Unlike Ruby, JavaScript does not have a handy `.empty?` convenience method. But, you can check to see if your object is empty by using `Object.keys(yourObject)` which returns an array of all the keys in your object. 
+
 
 ```js
 var meals = {breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes"};
@@ -118,6 +129,10 @@ for (var key in meals) {
 
 + Create a function `removeFromPlaylist` which accepts two arguments (the playlist object and the artist). The body of the function should delete the key-value pair from the playlist and return the updated playlist.
 
-+ Create a function `changePlaylistSong`, which accepts three arguments (the playlist object, the artist name, and the new song you would like to add). The body of the function should update the artist key with the new song value, and return the updated playlist.
++ Create a function `changePlaylistSong`, which accepts three arguments (the playlist object, the new song, and the artist name you would like to add). The body of the function should update the artist key with the new song value, and return the updated playlist.
 
 + Create a function `readPlaylist`, which accepts one argument (the playlist object). The function should iterate over the key-value pairs and use `console.log` to print out the playlist's artists and songs. The function should check to see if there are songs on the playlist. If there aren't any, it should print out `"your playlist is empty"`.
+
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-hashes-readme'>Hashes in JS</a> on Learn.co and start learning to code for free.</p>
+
