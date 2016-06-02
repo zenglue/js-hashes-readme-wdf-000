@@ -54,7 +54,7 @@ Just like in Ruby, we access the value of an object from its key:
 
 ```js
 var meals = {breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes"}
-meals["breakfast"] //returns "oatmeals"
+meals["breakfast"] //returns "oatmeal"
 meals["lunch"] // returns "turkey sandwich"
 meals["dinner"] // returns "steak and potatoes"
 ```
@@ -127,3 +127,5 @@ for (var key in meals) {
 4. Create a function `removeFromPlaylist` which accepts two arguments (the playlist object and the artist name). The body of the function should delete the key-value pair from the playlist and return the updated playlist.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-hashes-readme' title='JavaScript Hashes'>JavaScript Hashes</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/js-hashes-readme'>Hashes in JS</a> on Learn.co and start learning to code for free.</p>
